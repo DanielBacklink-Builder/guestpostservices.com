@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio — Your Name. Developer, designer, creator." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">YourName</a>
+      <nav class="nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+          <p class="lead">A Frontend Developer who builds accessible, performant web apps and delightful UIs.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <!-- Placeholder illustration -->
+          <svg width="300" height="220" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration">
+            <rect x="0" y="0" width="300" height="220" rx="14" fill="#E9F5FF"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#6C7A89" font-size="18">Your Project Image</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hello — I’m Your Name. I build things for the web, focusing on front-end development, performance, and accessibility. I enjoy turning complex problems into clean, accessible, and responsive experiences. When I’m not coding, I like designing interfaces and learning new web technologies.</p>
+          <p>Available for freelance or full-time work. Currently open to new opportunities.</p>
+        </div>
+        <div class="about-details">
+          <ul>
+            <li><strong>Location:</strong> Your City, Country</li>
+            <li><strong>Role:</strong> Frontend Developer</li>
+            <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section projects">
+      <h2>Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/600x360?text=Project+1" alt="Project 1 screenshot">
+          </div>
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p>A short description of the project — what it does and the stack used (e.g., React, Node, Tailwind).</p>
+            <p class="card-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/600x360?text=Project+2" alt="Project 2 screenshot">
+          </div>
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p>Short summary — responsibilities, outcome, highlights (e.g., improved performance by 30%).</p>
+            <p class="card-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/600x360?text=Project+3" alt="Project 3 screenshot">
+          </div>
+          <div class="card-body">
+            <h3>Project Three</h3>
+            <p>Short summary — single-page app, API integration, or design system work.</p>
+            <p class="card-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section skills">
+      <h2>Skills</h2>
+      <p class="muted">A selection of tools and technologies I commonly use</p>
+      <ul class="skill-list">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React / Next.js</li>
+        <li>TypeScript</li>
+        <li>Accessibility (A11y)</li>
+        <li>Performance Optimization</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact</h2>
+      <p>Interested in working together? Send me a message.</p>
+      <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <p><button type="submit" class="btn primary">Send</button></p>
+        <p class="muted">Or email me directly at <a href="mailto:you@example.com">you@example.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
